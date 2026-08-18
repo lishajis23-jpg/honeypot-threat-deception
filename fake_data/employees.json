@@ -1,0 +1,47 @@
+[
+    {
+        "employee_id": "EMP1001",
+        "name": "Arjun Mehta",
+        "department": "Finance",
+        "role": "Finance Manager",
+        "email": "arjun.mehta@company.local",
+        "phone": "+91-9000001001",
+        "access_level": "manager"
+    },
+    {
+        "employee_id": "EMP1002",
+        "name": "Priya Nair",
+        "department": "Human Resources",
+        "role": "HR Executive",
+        "email": "priya.nair@company.local",
+        "phone": "+91-9000001002",
+        "access_level": "employee"
+    },
+    {
+        "employee_id": "EMP1003",
+        "name": "Rohan Kapoor",
+        "department": "IT",
+        "role": "System Administrator",
+        "email": "rohan.kapoor@company.local",
+        "phone": "+91-9000001003",
+        "access_level": "admin"
+    },
+    {
+        "employee_id": "EMP1004",
+        "name": "Sneha Rao",
+        "department": "Marketing",
+        "role": "Marketing Lead",
+        "email": "sneha.rao@company.local",
+        "phone": "+91-9000001004",
+        "access_level": "manager"
+    },
+    {
+        "employee_id": "EMP1005",
+        "name": "Vikram Shah",
+        "department": "Sales",
+        "role": "Sales Executive",
+        "email": "vikram.shah@company.local",
+        "phone": "+91-9000001005",
+        "access_level": "employee"
+    }
+]

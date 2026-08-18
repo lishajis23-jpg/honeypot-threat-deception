@@ -1,0 +1,211 @@
+[
+    {
+        "timestamp": "2026-08-16T16:44:28.502582",
+        "attack_type": "SENSITIVE_FILE_ACCESS",
+        "resource": "/files/finance/payroll.txt",
+        "category": "finance",
+        "filename": "payroll.txt",
+        "session_id": "demo-session",
+        "severity": "HIGH"
+    },
+    {
+        "timestamp": "2026-08-16T16:44:29.525897",
+        "attack_type": "SENSITIVE_FILE_ACCESS",
+        "resource": "/files/finance/payroll.txt",
+        "category": "finance",
+        "filename": "payroll.txt",
+        "session_id": "demo-session",
+        "severity": "HIGH"
+    },
+    {
+        "timestamp": "2026-08-16T16:51:38.336127",
+        "attack_type": "SENSITIVE_FILE_ACCESS",
+        "resource": "/files/finance/payroll.txt",
+        "category": "finance",
+        "filename": "payroll.txt",
+        "session_id": "anonymous",
+        "severity": "HIGH"
+    },
+    {
+        "timestamp": "2026-08-16T16:51:39.262741",
+        "attack_type": "SENSITIVE_FILE_ACCESS",
+        "resource": "/files/finance/payroll.txt",
+        "category": "finance",
+        "filename": "payroll.txt",
+        "session_id": "anonymous",
+        "severity": "HIGH"
+    },
+    {
+        "timestamp": "2026-08-16T16:53:37.939535",
+        "attack_type": "SENSITIVE_FILE_ACCESS",
+        "resource": "/files/finance/payroll.txt",
+        "category": "finance",
+        "filename": "payroll.txt",
+        "session_id": "attacker-001",
+        "severity": "HIGH"
+    },
+    {
+        "timestamp": "2026-08-16T17:01:12.619288",
+        "attack_type": "SENSITIVE_FILE_ACCESS",
+        "resource": "/files/finance/payroll.txt",
+        "category": "finance",
+        "filename": "payroll.txt",
+        "session_id": "anonymous",
+        "source_ip": "127.0.0.1",
+        "severity": "HIGH"
+    },
+    {
+        "timestamp": "2026-08-16T17:14:11.791080",
+        "attack_type": "ADMIN_LOGIN_ATTEMPT",
+        "resource": "/admin/login",
+        "category": "admin",
+        "filename": "login",
+        "session_id": "anonymous",
+        "source_ip": "127.0.0.1",
+        "severity": "HIGH"
+    },
+    {
+        "timestamp": "2026-08-16T17:17:13.683419",
+        "attack_type": "SENSITIVE_FILE_ACCESS",
+        "resource": "/files/admin/credentials.txt",
+        "category": "admin",
+        "filename": "credentials.txt",
+        "session_id": "anonymous",
+        "source_ip": "127.0.0.1",
+        "severity": "HIGH"
+    },
+    {
+        "timestamp": "2026-08-16T17:32:38.258620",
+        "attack_type": "EMPLOYEE_DATABASE_SEARCH",
+        "resource": "/employees/search",
+        "category": "hr",
+        "filename": "employees.json",
+        "session_id": "anonymous",
+        "source_ip": "127.0.0.1",
+        "severity": "HIGH"
+    },
+    {
+        "timestamp": "2026-08-16T17:34:46.515194",
+        "attack_type": "ADMIN_LOGIN_ATTEMPT",
+        "resource": "/admin/login",
+        "category": "admin",
+        "filename": "login",
+        "session_id": "anonymous",
+        "source_ip": "127.0.0.1",
+        "severity": "HIGH"
+    },
+    {
+        "timestamp": "2026-08-16T17:37:41.660685",
+        "attack_type": "SENSITIVE_FILE_ACCESS",
+        "resource": "/files/admin/credentials.txt",
+        "category": "admin",
+        "filename": "credentials.txt",
+        "session_id": "anonymous",
+        "source_ip": "127.0.0.1",
+        "severity": "HIGH"
+    },
+    {
+        "timestamp": "2026-08-16T17:39:35.489111",
+        "attack_type": "SENSITIVE_FILE_ACCESS",
+        "resource": "/files/finance/payroll.txt",
+        "category": "finance",
+        "filename": "payroll.txt",
+        "session_id": "anonymous",
+        "source_ip": "127.0.0.1",
+        "severity": "HIGH"
+    },
+    {
+        "timestamp": "2026-08-16T17:40:42.795891",
+        "attack_type": "SENSITIVE_FILE_ACCESS",
+        "resource": "/files/finance/payroll.txt",
+        "category": "finance",
+        "filename": "payroll.txt",
+        "session_id": "attacker-001",
+        "source_ip": "127.0.0.1",
+        "severity": "HIGH"
+    },
+    {
+        "timestamp": "2026-08-16T17:45:02.331656",
+        "attack_type": "PRIVILEGE_ESCALATION_ATTEMPT",
+        "resource": "/admin/escalate",
+        "category": "admin",
+        "filename": "privilege",
+        "session_id": "anonymous",
+        "source_ip": "127.0.0.1",
+        "severity": "CRITICAL"
+    },
+    {
+        "timestamp": "2026-08-18T19:17:23.943674",
+        "attack_type": "FAKE_DATA_MODIFICATION",
+        "resource": "/files/finance/payroll.txt",
+        "category": "finance",
+        "filename": "payroll.txt",
+        "session_id": "anonymous",
+        "source_ip": "127.0.0.1",
+        "severity": "HIGH"
+    },
+    {
+        "timestamp": "2026-08-18T19:17:47.986893",
+        "attack_type": "FAKE_DATA_MODIFICATION",
+        "resource": "/files/finance/payroll.txt",
+        "category": "finance",
+        "filename": "payroll.txt",
+        "session_id": "anonymous",
+        "source_ip": "127.0.0.1",
+        "severity": "HIGH"
+    },
+    {
+        "timestamp": "2026-08-18T19:20:43.176097",
+        "attack_type": "FAKE_DATA_DELETION",
+        "resource": "/files/hr/employees.csv",
+        "category": "hr",
+        "filename": "employees.csv",
+        "session_id": "anonymous",
+        "source_ip": "127.0.0.1",
+        "severity": "CRITICAL"
+    },
+    {
+        "timestamp": "2026-08-18T20:40:03.475037",
+        "attack_type": "SENSITIVE_FILE_ACCESS",
+        "resource": "/files/finance/payroll.txt",
+        "category": "finance",
+        "filename": "payroll.txt",
+        "session_id": "anonymous",
+        "source_ip": "127.0.0.1",
+        "severity": "HIGH",
+        "command": "GET /files/finance/payroll.txt"
+    },
+    {
+        "timestamp": "2026-08-18T20:45:33.823195",
+        "attack_type": "ADMIN_LOGIN_ATTEMPT",
+        "resource": "/admin/login",
+        "category": "admin",
+        "filename": "login",
+        "session_id": "anonymous",
+        "source_ip": "127.0.0.1",
+        "severity": "HIGH",
+        "command": "POST /admin/login - username=testadmin"
+    },
+    {
+        "timestamp": "2026-08-18T20:49:52.033420",
+        "attack_type": "EMPLOYEE_DATABASE_SEARCH",
+        "resource": "/employees/search",
+        "category": "hr",
+        "filename": "employees.json",
+        "session_id": "anonymous",
+        "source_ip": "127.0.0.1",
+        "severity": "HIGH",
+        "command": ""
+    },
+    {
+        "timestamp": "2026-08-18T20:51:09.458147",
+        "attack_type": "PRIVILEGE_ESCALATION_ATTEMPT",
+        "resource": "/admin/escalate",
+        "category": "admin",
+        "filename": "privilege",
+        "session_id": "anonymous",
+        "source_ip": "127.0.0.1",
+        "severity": "CRITICAL",
+        "command": "POST /admin/escalate"
+    }
+]
