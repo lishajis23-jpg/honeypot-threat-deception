@@ -1,0 +1,13 @@
+Security Policy
+
+Employees must use strong passwords for company accounts.
+
+Company credentials must never be shared with another person.
+
+Sensitive employee information should only be accessed by authorized personnel.
+
+Security incidents must be reported to the Information Security department.
+
+Employees should not attempt to bypass access controls.
+
+Access to internal systems is determined according to the employee's assigned role.
