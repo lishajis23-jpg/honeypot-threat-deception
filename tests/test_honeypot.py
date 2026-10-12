@@ -62,3 +62,25 @@ def test_threat_sequence_returns_success(test_session_events):
     assert data["session_id"] == "test_session_01"
     assert "total_events" in data
     assert "attack_sequence" in data
+
+def test_unknown_session_returns_404(test_session_events):
+    analyze_response = client.get(
+        "/threat/analyze/unknown_session"
+    )
+    assert analyze_response.status_code == 404
+
+    sequence_response = client.get(
+        "/threat/sequence/unknown_session"
+    )
+    assert sequence_response.status_code == 404
+
+def test_missing_security_log_returns_404(tmp_path, monkeypatch):
+    missing_log = tmp_path / "missing_security_events.json"
+
+    monkeypatch.setattr("app.main.LOG_FILE", missing_log)
+
+    response = client.get(
+        "/threat/analyze/test_session_01"
+    )
+
+    assert response.status_code == 404
