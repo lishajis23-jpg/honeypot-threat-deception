@@ -261,6 +261,7 @@ def get_attack_sequence(session_id: str):
         attack_sequence.append({
             "step": index,
             "attack_type": event.get("attack_type"),
+            "command": event.get("command", ""),
             "resource": event.get("resource"),
             "category": event.get("category"),
             "severity": event.get("severity"),
@@ -341,18 +342,51 @@ def analyze_threat(session_id: str):
             "Administrative login attempt detected"
         )
 
+    if "EMPLOYEE_DATABASE_SEARCH" in attack_types:
+        suspicious_reasons.append(
+            "Employee database search detected"
+    )
+
+    if "FAKE_DATA_MODIFICATION" in attack_types:
+        suspicious_reasons.append(
+            "Attempt to modify decoy data detected"
+    )
+
+    if "FAKE_DATA_DELETION" in attack_types:
+        suspicious_reasons.append(
+            "Attempt to delete decoy data detected"
+    )
+
+    risk_points = {
+        "SENSITIVE_FILE_ACCESS": 20,
+        "ADMIN_LOGIN_ATTEMPT": 25,
+        "PRIVILEGE_ESCALATION_ATTEMPT": 40,
+        "FAKE_DATA_MODIFICATION": 40,
+        "FAKE_DATA_DELETION": 50,
+        "EMPLOYEE_DATABASE_SEARCH": 10
+    }
+
+    risk_score = min(
+        100,
+        sum(
+            risk_points.get(event.get("attack_type", ""), 0)
+            for event in session_events
+        )
+    )
+
     risk_level = "LOW"
 
-    if critical_events or len(suspicious_reasons) >= 3:
+    if risk_score >= 75:
         risk_level = "CRITICAL"
-    elif len(suspicious_reasons) >= 2:
+    elif risk_score >= 50:
         risk_level = "HIGH"
-    elif suspicious_reasons:
+    elif risk_score >= 25:
         risk_level = "MEDIUM"
 
     return {
         "status": "honeypot",
         "session_id": session_id,
+        "risk_score": risk_score,
         "risk_level": risk_level,
         "suspicious": len(suspicious_reasons) > 0,
         "events_count": len(session_events),
